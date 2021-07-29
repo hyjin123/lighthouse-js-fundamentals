@@ -6,3 +6,10 @@ for (let amount of amounts) {
 }
 
 console.log("Order total is: ", total);
+
+function sayHello() {
+  let message = "Hello";
+  console.log(message);
+}
+
+sayHello();
