@@ -30,7 +30,6 @@ const age = 26;
 if (isCitizen && age > 18) {
   console.log("You are eligible to vote.");
 }
-*/
 
 const whichSchool  = function (age) {
   if (age < 13) {
@@ -43,3 +42,13 @@ const whichSchool  = function (age) {
 }
 
 console.log(whichSchool(35));
+
+
+var solution = 12;
+
+for (var x = 12; x >= 2; x--) {
+    solution *= (x-1);
+}
+
+console.log(solution);
+*/
