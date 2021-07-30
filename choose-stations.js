@@ -31,9 +31,10 @@ function chooseStations(stations) {
   }
   return goodStations
 }
+console.log(chooseStations(stations));
+
 */
 
-console.log(chooseStations(stations));
 /*
 let hello = [];
 for (let i = 0; i <=0; i++) {
