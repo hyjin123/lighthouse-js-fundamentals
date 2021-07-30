@@ -9,7 +9,7 @@ console.log("Order total is: ", total);
 
 function sayHello() {
   let message = "Hello";
-  console.log(message);
+  return message;
 }
 
 sayHello();
