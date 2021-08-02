@@ -1,6 +1,6 @@
 // Building a function that determines the lasti ndex of an item in an array
 function lastIndexOf(array, num) {
-  let neverOccurs = -1; //prin out -1 if the value never occurs in an array
+  let neverOccurs = -1; //print out -1 if the value never occurs in an array or is given an empty array
   if (array === []) {
     return neverOccurs;
   }
@@ -9,7 +9,7 @@ function lastIndexOf(array, num) {
       return i;
     }
   }
-  return neverOccurs;
+  return neverOccurs; 
 }
 
 console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1), "=?", 3);
