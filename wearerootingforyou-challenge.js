@@ -2,19 +2,16 @@
 
 function judgeVegetable(vegetables, characteristics) {
   let winner = "";
-  if (characteristics === "redness") {
-    for (let i = vegetables.length - 1; i <= 1; i--) {
-      if (vegetables[i].redness >= vegetables[i-1].redness) {
-        winner = vegetables[i].submitter;
-      } else {
-        winner = vegetables[i-1].submitter;
-      }
+  let max = 0;
+  let maxIndex = 0;
+  const newArray = vegetables.map(element => element[characteristics]);
+  for (let i = 0; i < newArray.length; i++) {
+    if (newArray[i] > max) {
+      max = newArray[i];
+      maxIndex = i;
     }
-  } else if (characteristics === "plumpness") {
-      for (let i = 0; i < vegetables.length; i++) {
-
-      }
   }
+  winner = vegetables[maxIndex].submitter;
   return winner;
 }
 
@@ -36,6 +33,6 @@ const vegetables = [
   }
 ]
 
-const metric = 'redness'
+const metric = 'plumpness'
 
-judgeVegetable(vegetables, metric)
+console.log(judgeVegetable(vegetables, metric));
